@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign in</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="signIn vh-100 overflow-auto">
+      <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+          <h1 class="text-center text-info">Smart Login System</h1>
+
+          <input
+            id="signupName"
+            class="form-control my-3 bg-transparent"
+            placeholder="Enter your name"
+            type="text"
+          />
+          <p id="usernameTextError" class="text-danger"></p>
+          <input
+            id="signupEmail"
+            class="form-control my-3 bg-transparent"
+            placeholder="Enter your email"
+            type="email"
+          />
+          <p id="emailTextError" class="text-danger"></p>
+
+          <input
+            id="signupPassword"
+            class="form-control my-3 bg-transparent"
+            placeholder="Enter  password"
+            type="password"
+          />
+          <p id="passTextError" class="text-danger"></p>
+
+          <p id="exist"></p>
+
+          <button
+            id="btnSignUp"
+            onclick="signUp()"
+            class="btn btn-outline-info w-100 my-3"
+          >
+            Sign Up
+          </button>
+          <p class="text-white">
+            You have an account?
+            <a class="text-white" href="index.html">Signin</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
